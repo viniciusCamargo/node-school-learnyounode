@@ -3,13 +3,13 @@ let http = require('http')
 let url = process.argv[2]
 
 http.get(url, response => {
-  let data = []
+  let dataArray = []
   response.setEncoding('utf-8')
   response.on('data', data => {
-    data += data
+    dataArray += data
   })
   response.on('end', () => {
-    console.log(data.length)
-    console.log(data)
+    console.log(dataArray.length)
+    console.log(dataArray)
   })
 })
