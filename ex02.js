@@ -5,4 +5,4 @@ for (let i = 2; i < x.length; i++) {
   c = c + Number(x[i])
 }
 
-process.stdout.write(c)
+console.log(c)
